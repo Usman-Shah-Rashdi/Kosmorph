@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Kosmos
+GenericName=File & Document Utility Suite
+Comment=Convert, organize, and manage files and documents
+Exec=kosmos gui
+Icon=utilities-file-archiver
+Terminal=false
+Categories=Utility;FileTools;Office;
+Keywords=file;converter;organizer;pdf;foldr;kosmos;

@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+THIRD-PARTY ATTRIBUTION:
+Portions of kosmorph/modules/organizer/ (category definitions, TOML config
+loader, ignore rules, MIME override detection, empty-directory scanner, and
+watch-folder daemon registry) are adapted from FOLDR (github.com/foldrhq/Foldr)
+by Qasim Sethar, licensed under the MIT License.
