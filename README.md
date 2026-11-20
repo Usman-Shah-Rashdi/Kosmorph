@@ -2,8 +2,8 @@
 █▄▀ █▀█ █▀ █▀▄▀█ █▀█ █▀█ █▀█ █ █
 █ █ █▄█ ▄█ █ ▀ █ █▄█ █▀▄ █▀▀ █▀█
 ```
+# Kosmorph - Special Thanks to Foldr:https://github.com/foldrhq/Foldr
 
-# Kosmos
 
 **Kosmos** is a modular, lightweight, cross-platform file transformation, smart folder organization, and document utility suite powered by a decoupled Python backend and a modern desktop GUI.
 
