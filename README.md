@@ -1,4 +1,5 @@
-# Kosmorph
+# Kosmorph - Special Thanks to Foldr:https://github.com/foldrhq/Foldr
+
 
 **Kosmorph** is a modular, lightweight, cross-platform file transformation, folder organization, and document utility suite built on a decoupled Python backend.
 
