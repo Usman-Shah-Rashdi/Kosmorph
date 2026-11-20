@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kosmorph"
+version = "0.1.0"
+description = "Cross-platform, zero-bloat file conversion, organization, and document utility engine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Usman Shah Rashdi" }
+]
+keywords = ["file-converter", "folder-organizer", "pdf", "automation", "cli", "utility"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "Pillow>=10.0.0",
+    "PyMuPDF>=1.24.0",
+    "PyYAML>=6.0",
+    "Markdown>=3.5",
+]
+
+[project.optional-dependencies]
+docx = ["pdf2docx>=0.5.8"]
+xlsx = ["openpyxl>=3.1.0"]
+dev = ["pytest>=8.0.0"]
+full = ["pdf2docx>=0.5.8", "openpyxl>=3.1.0"]
+
+[project.scripts]
+kosmorph = "kosmorph.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kosmorph*"]
