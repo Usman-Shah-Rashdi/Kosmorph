@@ -129,7 +129,7 @@ def spawn_daemon(target: Path, dry_run: bool = False, recursive: bool = False) -
     env["PYTHONPATH"] = root + (sep + old_pp if old_pp else "")
 
     _LOG_DIR.mkdir(parents=True, exist_ok=True)
-    safe = target.name.replace(" ", "_").replace("/", "_").replace("\", "_")
+    safe = target.name.replace(" ", "_").replace("/", "_").replace("\\", "_")
     log_file = _LOG_DIR / f"{safe}.log"
 
     with open(log_file, "a", encoding="utf-8") as lf:
