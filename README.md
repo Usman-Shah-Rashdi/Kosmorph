@@ -2,7 +2,7 @@
 █▄▀ █▀█ █▀ █▀▄▀█ █▀█ █▀█ █▀█ █ █
 █ █ █▄█ ▄█ █ ▀ █ █▄█ █▀▄ █▀▀ █▀█
 ```
-# Kosmorph - Special Thanks to Foldr:https://github.com/foldrhq/Foldr
+# Kosmorph - Special Thanks to Foldr: https://github.com/foldrhq/Foldr
 
 
 **Kosmos** is a modular, lightweight, cross-platform file transformation, smart folder organization, and document utility suite powered by a decoupled Python backend and a modern desktop GUI.
@@ -86,7 +86,7 @@ kosmos convert data.json --to csv
 
 ## Acknowledgments
 
-Special thanks to my friend, creator of **Foldr**, whose 31-category sorting architecture, TOML rule engine, MIME detection, and undo-journal design inspired and power the smart organization engine at the heart of Kosmos.
+Special thanks to my friend https://github.com/MQSethar, creator of **Foldr**, whose 31-category sorting architecture, TOML rule engine, MIME detection, and undo-journal design inspired and power the smart organization engine at the heart of Kosmos.
 
 ---
 
