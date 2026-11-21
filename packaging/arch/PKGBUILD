@@ -1,0 +1,38 @@
+# Maintainer: Usman Shah Rashdi
+pkgname=kosmos
+pkgver=0.2.0
+pkgrel=1
+pkgdesc="Cross-platform, zero-bloat file conversion, smart folder organization, and document utility suite"
+arch=('any')
+url="https://github.com/Usman-Shah-Rashdi/PyUtilSuite"
+license=('MIT')
+depends=(
+    'python>=3.10'
+    'python-pillow'
+    'python-pymupdf'
+    'python-yaml'
+    'python-markdown'
+    'tk'
+)
+makedepends=('python-build' 'python-installer' 'python-wheel' 'python-setuptools')
+optdepends=(
+    'libreoffice-fresh: Office document, spreadsheet, and presentation to PDF conversions'
+    'python-watchdog: Background watch-folder automation'
+    'tesseract: OCR support for scanned PDFs'
+    'p7zip: 7Z archive support'
+)
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+    install -Dm644 packaging/linux/kosmos.desktop "${pkgdir}/usr/share/applications/kosmos.desktop"
+    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+}
