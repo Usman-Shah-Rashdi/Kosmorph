@@ -2,12 +2,14 @@
 █▄▀ █▀█ █▀ █▀▄▀█ █▀█ █▀█ █▀█ █ █
 █ █ █▄█ ▄█ █ ▀ █ █▄█ █▀▄ █▀▀ █▀█
 ```
-# Kosmorph - Special Thanks to Foldr: https://github.com/foldrhq/Foldr
 
+# Kosmorph - Special Thanks to [Foldr](https://github.com/foldrhq/Foldr)
 
 **Kosmos** is a modular, lightweight, cross-platform file transformation, smart folder organization, and document utility suite powered by a decoupled Python backend and a modern desktop GUI.
 
 Built for speed and low memory overhead, Kosmos integrates **FOLDR's** 31-category smart sorting engine, TOML custom rules, MIME-type override detection, non-sequential ID-based undo history, empty-directory cleanup, and watch-folder automation alongside multi-format document, PDF, spreadsheet, and image utilities.
+
+[Learn more about Foldr](https://docs.qasimio.me/docs/foldr)
 
 ---
 
@@ -44,6 +46,7 @@ Kosmos/
 ## Running & Installation
 
 ### Run Directly from Source (No Install Required)
+
 ```bash
 # Launch the desktop GUI
 python -m kosmorph
@@ -54,6 +57,7 @@ python -m kosmorph organize ./Downloads --dry-run
 ```
 
 ### Install as a Package
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -73,11 +77,11 @@ kosmos diagnostics           # Check LibreOffice, MS Office, Tesseract, 7-Zip
 kosmos organize ./Downloads --strategy extension --smart --dry-run
 kosmos organize ./Downloads --recursive --depth 2
 kosmos watch ./Downloads --recursive
-kosmos watches               # List active background watchers
-kosmos unwatch ./Downloads   # Stop a background watcher
-kosmos history               # View operation history
-kosmos undo                  # Undo latest operation
-kosmos undo --id <ID>        # Undo specific operation by ID
+kosmos watches                # List active background watchers
+kosmos unwatch ./Downloads    # Stop a background watcher
+kosmos history                # View operation history
+kosmos undo                   # Undo latest operation
+kosmos undo --id <ID>         # Undo specific operation by ID
 kosmos convert report.docx --to pdf
 kosmos convert data.json --to csv
 ```
@@ -86,7 +90,9 @@ kosmos convert data.json --to csv
 
 ## Acknowledgments
 
-Special thanks to my friend https://github.com/MQSethar, creator of **Foldr**, whose 31-category sorting architecture, TOML rule engine, MIME detection, and undo-journal design inspired and power the smart organization engine at the heart of Kosmos.
+Special thanks to my friend [MQSethar](https://github.com/MQSethar), creator of [**Foldr**](https://github.com/foldrhq/Foldr), whose 31-category sorting architecture, TOML rule engine, MIME detection, and undo-journal design inspired and power the smart organization engine at the heart of Kosmos.
+
+Learn more about [Foldr's architecture and capabilities](https://docs.qasimio.me/docs/foldr).
 
 ---
 
