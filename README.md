@@ -14,7 +14,7 @@
 
 **Kosmorph** is a modular, lightweight, cross-platform file management and document utility suite. It brings intelligent folder organization, file operations, document conversion, PDF processing, image utilities, and spreadsheet tools together in one application.
 
-Built around a decoupled Python backend, Kosmorph provides both a Tkinter desktop interface and a command-line interface (CLI). Its smart organization engine incorporates **FOLDR's 31-category sorting architecture**, customizable TOML rules, MIME-type detection and overrides, watch-folder automation, and an ID-based undo journal.
+Built around a decoupled Python backend, Kosmorph provides both a Tkinter desktop interface and a command-line interface (CLI). Its smart organization engine incorporates **FOLDR's 31-category sorting architecture**, customizable TOML rules, MIME-type detection and overrides, watch-folder automation, and an ID-based undo journal. 
 
 ---
 
